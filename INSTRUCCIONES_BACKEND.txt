@@ -1,0 +1,31 @@
+OPCIONES PARA EL CORREO:
+========================
+
+OPCIÓN 1: Backend + Contraseña de Aplicación de Google (RECOMENDADO PARA PROYECTOS SERIOS)
+-----------------------------------------------------------------------------------------
+- Ventaja: Tienes el control total. Funciona en tu propio servidor.
+- Requisito: NECESITAS la "Contraseña de Aplicación". No hay vuelta atrás con esto en Gmail por seguridad.
+- Pasos:
+  1. Ve a https://myaccount.google.com/apppasswords
+  2. Crea una contraseña.
+  3. Ponla en `server.js` en lugar de la configuración de prueba que he puesto.
+
+OPCIÓN 2: Backend + Modo Prueba (ACTUAL)
+---------------------------------------
+- Como no tienes la contraseña, el servidor usa un "simulador".
+- Cuando envías el formulario, NO llega a tu Gmail real.
+- Te da un ENLACE en la terminal para ver cómo quedó el correo.
+- Útil para probar que el código funciona sin configurar nada.
+
+OPCIÓN 3: Formspree (FÁCIL Y SIN BACKEND)
+-----------------------------------------
+- Ventaja: No necesitas `node server.js` ni contraseñas.
+- Desventaja: Tienes un límite de correos gratis al mes y dependes de un servicio externo.
+- Cómo se hace:
+  1. Te registras en https://formspree.io
+  2. Creas un formulario y te dan una URL parecida a: `https://formspree.io/f/xnqyjzby`
+  3. Cambias el `action` de tu formulario en `contacto.html` y borras mi código de `script.js`.
+
+¿QUÉ PREFIERES?
+He configurado el servidor para que ahora, al entrar en http://localhost:3000, veas tu página web completa.
+Prueba de nuevo el formulario. Si sigue sin llegarte al correo real es porque estás en MODO PRUEBA (Opción 2).

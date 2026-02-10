@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Legumbres Atalaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Legumbres Atalaya.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="quienes-somos.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="page-header" style="background-image: url('img/oli-bg.jpg'); background-color: #2C3E2D;">
+        <!-- Fallback color if image missing -->
+        <div class="overlay"></div>
+        <div class="container page-header-content">
+            <h1>Contacto</h1>
+            <p>Hablemos de negocios. Trato directo y personalizado.</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>¿Tienes dudas?</h3>
+                    <p class="mb-md" style="opacity: 0.9;">
+                        Estamos disponibles para tomar nota de tu pedido o resolver cualquier consulta sobre nuestros
+                        productos.
+                    </p>
+
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span style="display:block;">+34 655 84 85 73</span>
+                                <span style="display:block;">+34 655 84 85 73</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>legumbresatalaya@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av del Olivar, 6, Villanueva de Algaidas, Málaga</span>
+                        </div>
+                        <div class="contact-item mt-md">
+                            <a href="https://www.facebook.com/legumbresatalaya/" target="_blank"
+                                style="font-size: 1.5rem; color: white;">
+                                <i class="fab fa-facebook"></i> Síguenos en Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm">
+                        <h3 class="mb-md" style="color: var(--color-primary);">Enviar Mensaje</h3>
+                        <div class="form-group">
+                            <label for="name"
+                                style="display: block; margin-bottom: 5px; font-weight: 500;">Nombre</label>
+                            <input type="text" id="name" name="nombre" class="form-input"
+                                placeholder="Tu Nombre o Empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"
+                                style="display: block; margin-bottom: 5px; font-weight: 500;">Email</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"
+                                style="display: block; margin-bottom: 5px; font-weight: 500;">Mensaje</label>
+                            <textarea id="message" name="mensaje" class="form-input"
+                                placeholder="¿En qué productos estás interesado?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Legumbres Atalaya</h4>
+                    <p>Envasado propio y distribución mayorista.</p>
+                    <p>Av del Olivar, 6, Villanueva de Algaidas, Málaga</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul class="text-muted">
+                        <li class="mb-xs"><a href="index.html">Inicio</a></li>
+                        <li class="mb-xs"><a href="productos.html">Catálogo</a></li>
+                        <li class="mb-xs"><a href="quienes-somos.html">Somos Diferentes</a></li>
+                        <li class="mb-xs"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario</h4>
+                    <p class="text-muted">Lunes - Viernes: 8:00 - 18:00</p>
+                    <p class="text-muted">Sábado: 9:00 - 13:00</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.facebook.com/legumbresatalaya/" target="_blank"
+                            style="color: white; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Legumbres Atalaya. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

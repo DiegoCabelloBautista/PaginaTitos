@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | Legumbres Atalaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Legumbres Atalaya.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="quienes-somos.html" class="nav-link">Quienes Somos</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="page-header" style="background-image: url('img/legumes.png');">
+        <div class="overlay"></div>
+        <div class="container page-header-content">
+            <h1>Nuestros Productos</h1>
+            <p>Selectos, naturales y con el sello de garantía Atalaya.</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="legumbres">Legumbres Secas</button>
+                <button class="tab-btn" data-tab="aceites">Aceites</button>
+                <button class="tab-btn" data-tab="aceitunas">Aceitunas y Encurtidos</button>
+            </div>
+
+            <!-- Tab: Legumbres -->
+            <div id="legumbres" class="tab-content active">
+                <div class="text-center mb-lg">
+                    <h3>Variedad y Tradición</h3>
+                    <p class="text-muted">Formatos disponibles: 500g, 1kg, 5kg, 15kg, 25kg.</p>
+                </div>
+                <div class="catalog-grid">
+                    <!-- Products -->
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/chickpeas.png" alt="Garbanzos"></div>
+                        <div class="catalog-details">
+                            <h4>Garbanzos</h4>
+                            <p>Ideales para guisos. Piel fina y sabor suave.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Mexicano</span>
+                                <span class="tag">Lechoso Nacional</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/lentils.png" alt="Lentejas"></div>
+                        <div class="catalog-details">
+                            <h4>Lentejas</h4>
+                            <p>No necesitan remojo previo. Cocción rápida.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Pardina</span>
+                                <span class="tag">Castellana</span>
+                                <span class="tag">Eston</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/white_beans.png" alt="Alubias Blancas"></div>
+                        <div class="catalog-details">
+                            <h4>Alubias Blancas</h4>
+                            <p>Textura mantecosa y gran sabor.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Judión de la Granja</span>
+                                <span class="tag">Michigan</span>
+                                <span class="tag">Selectas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/colored_beans.png" alt="Alubias Color"></div>
+                        <div class="catalog-details">
+                            <h4>Alubias de Color</h4>
+                            <p>Variedades especiales para platos regionales.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Canela</span>
+                                <span class="tag">Carilla</span>
+                                <span class="tag">Riñón</span>
+                                <span class="tag">Fabada</span>
+                                <span class="tag">Pinta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/rice.png" alt="Arroz"></div>
+                        <div class="catalog-details">
+                            <h4>Arroz</h4>
+                            <p>El mejor acompañamiento.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Redondo</span>
+                                <span class="tag">Extra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Aceites -->
+            <div id="aceites" class="tab-content">
+                <div class="catalog-grid">
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/oil_5l.png" alt="AOVE 5L"></div>
+                        <div class="catalog-details">
+                            <h4>Oliva Virgen Extra Mayorista</h4>
+                            <p>Garrafa de 5L con asa y envase resistente. Ideal para alto consumo.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Cortijo Corpas</span>
+                                <span class="tag">Hostelería</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/oil.png" alt="AOVE Premium"></div>
+                        <div class="catalog-details">
+                            <h4>Oliva Virgen Extra Premium</h4>
+                            <p>Formato de cristal para venta al detalle o regalo.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Selección Familiar</span>
+                                <span class="tag">Regalo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/sunflower_oil.png" alt="Aceite Girasol"></div>
+                        <div class="catalog-details">
+                            <h4>Aceite de Girasol</h4>
+                            <p>Especial para frituras. Color claro y alta resistencia.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Novasol</span>
+                                <span class="tag">Refinado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Aceitunas -->
+            <div id="aceitunas" class="tab-content">
+                <div class="catalog-grid">
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/olives_manzanilla.png" alt="Aceitunas Mesa">
+                        </div>
+                        <div class="catalog-details">
+                            <h4>Clásicas de Mesa</h4>
+                            <p>Presentación tradicional en bote de cristal.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Chicón Lebrón</span>
+                                <span class="tag">Partidas de la Abuela</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/olives_gordal.png" alt="Gordal"></div>
+                        <div class="catalog-details">
+                            <h4>Variedad Gordal</h4>
+                            <p>Aceituna de gran calibre, carnosas y sabrosas.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Gordal Abuela</span>
+                                <span class="tag">Gordal Pepinillo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="catalog-img-wrapper"><img src="img/olives-macro.png" alt="Especialidades"></div>
+                        <div class="catalog-details">
+                            <h4>Especialidades y Encurtidos</h4>
+                            <p>Sabores únicos como chupadedos y pepinillos.</p>
+                            <div class="catalog-tags">
+                                <span class="tag">Chupadedos</span>
+                                <span class="tag">Pepinillos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Legumbres Atalaya</h4>
+                    <p>Envasado propio y distribución mayorista.</p>
+                    <p>Av del Olivar, 6, Villanueva de Algaidas, Málaga</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul class="text-muted">
+                        <li class="mb-xs"><a href="index.html">Inicio</a></li>
+                        <li class="mb-xs"><a href="productos.html">Catálogo</a></li>
+                        <li class="mb-xs"><a href="quienes-somos.html">Somos Diferentes</a></li>
+                        <li class="mb-xs"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario</h4>
+                    <p class="text-muted">Lunes - Viernes: 8:00 - 18:00</p>
+                    <p class="text-muted">Sábado: 9:00 - 13:00</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.facebook.com/legumbresatalaya/" target="_blank"
+                            style="color: white; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Legumbres Atalaya. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
