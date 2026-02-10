@@ -688,9 +688,177 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive adjustments for new elements */
-@media (max-width: 768px) {
+.titulo-form {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (Tablets & Mobile)
+   ========================================= */
+
+/* Tablets (Portrait) & Small Laptops (Up to 1024px) */
+@media screen and (max-width: 1024px) {
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 5rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets & Large Mobile (Up to 768px) */
+@media screen and (max-width: 768px) {
+    :root {
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2.5rem;
+        --spacing-xl: 4rem;
+    }
+
+    /* Navigation */
+    .nav-links {
+        display: none;
+        /* JS toggles this */
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    /* Hero */
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+        /* More space for nav */
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Contact Page - Stack columns */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        /* Unir las dos partes */
+        margin-bottom: var(--spacing-lg);
+        box-shadow: var(--shadow-sm);
+        /* Sombra suave */
+    }
+
+    .contact-info {
+        padding: 2rem 1.5rem;
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        /* Redondear solo arriba */
+        margin-bottom: 0;
+    }
+
+    .contact-form-container {
+        padding: 2rem 1.5rem;
+        background: white;
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+        /* Redondear solo abajo */
+    }
+
+    .form-input {
+        font-size: 16px;
+        /* Evita zoom automático en iPhone */
+    }
+
+    /* Typography adjustments */
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Page Headers */
+    .page-header {
+        height: 30vh;
+        min-height: 250px;
+    }
+
     .page-header h1 {
         font-size: 2.5rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile (Up to 480px) */
+@media screen and (max-width: 480px) {
+    :root {
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.75rem;
+        --spacing-md: 1.25rem;
+        --spacing-lg: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Contact info adjustments */
+    .contact-item {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-item i {
+        margin-bottom: 5px;
+        color: var(--color-secondary);
+    }
+
+    /* Make trust/stats grid smaller */
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
     }
 }
