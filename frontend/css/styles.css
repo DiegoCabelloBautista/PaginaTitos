@@ -221,7 +221,7 @@ ul {
     width: 100%;
     height: 100%;
     /* Gradient overlay + Image will be set via inline or updated manually */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('img/hero-bg.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/hero-bg.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
