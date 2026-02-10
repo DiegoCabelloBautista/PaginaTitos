@@ -78,49 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Manejo del Formulario de Contacto
-const contactForm = document.getElementById('contactForm');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.textContent;
-        submitBtn.textContent = 'Enviando...';
-        submitBtn.disabled = true;
-
-        const formData = {
-            nombre: contactForm.querySelector('input[name="nombre"]').value,
-            email: contactForm.querySelector('input[name="email"]').value,
-            mensaje: contactForm.querySelector('textarea[name="mensaje"]').value
-        };
-
-        try {
-            // Enviar datos al servidor backend (ruta relativa, funciona en local y producción)
-            const response = await fetch('/enviar-correo', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
-                contactForm.reset();
-            } else {
-                alert('Hubo un problema al enviar el mensaje: ' + result.message);
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Error de conexión. Asegúrate de iniciar el servidor backend (node server.js).');
-        } finally {
-            submitBtn.textContent = originalBtnText;
-            submitBtn.disabled = false;
-        }
-    });
-}
 
